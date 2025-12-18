@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>File Converter</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Conversor de Archivos</h1>
+
+      <form id="convertForm">
+        <input type="file" id="file" name="file" required />
+
+        <select id="target_format" required>
+          <option value="">Formato destino</option>
+          <option value="json">JSON</option>
+          <option value="csv">CSV</option>
+          <option value="xlsx">XLSX</option>
+          <option value="pdf">PDF</option>
+        </select>
+
+        <button type="submit">Convertir</button>
+      </form>
+
+      <div id="status"></div>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+  </body>
+</html>
