@@ -1,0 +1,11 @@
+name : CI + CD 
+
+on : 
+  push:  
+      branches: [ "main"]
+
+jobs :
+   name : Pipeline
+   runs-on: ubuntu-latest
+   
+  
