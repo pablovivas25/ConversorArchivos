@@ -5,7 +5,7 @@ on :
       branches: [ "main"]
 
 jobs :
-   name : Pipeline
-   runs-on: ubuntu-latest
+   Pipeline :
+     runs-on: ubuntu-latest
    
   
