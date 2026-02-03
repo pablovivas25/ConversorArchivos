@@ -22,6 +22,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copiar la app
 COPY app ./app
 
+# Copiar tests
+COPY tests ./tests
+
+ENV PYTHONPATH=/app
+
 # Crear carpetas necesarias
 RUN mkdir -p uploads outputs
 

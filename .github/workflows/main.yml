@@ -13,5 +13,8 @@ jobs :
       
       - name : Build Docker image
         run : docker build -t conversor-archivos .
+      
+      - name: Run tests
+        run : docker run --rm conversor-archivos pytest
    
   
